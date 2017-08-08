@@ -1,0 +1,7 @@
+<%= form_for @article, html: {class: "nifty_form"} do |f| %>
+  <p><%= f.label :title %></p>
+  <%= f.text_field :title %>
+  <p><%= f.label :content %></p>
+  <%= f.text_area :content, size: "100x20" %>
+  <p><%= f.submit %></p>
+<% end %>
